@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { FaUserPlus, FaUserEdit, FaUserMinus } from "react-icons/fa";
+import { FaUserPlus, FaUserEdit, FaUserMinus, FaUsers } from "react-icons/fa";
 
 import avatar from '../../assets/avatar.png';
 import './style.css';
@@ -13,6 +13,10 @@ export default function Sidebar() {
             <Link to="/">
                 <FaUserPlus color="white" size={24} />
                 Criar
+            </Link>
+            <Link to="/list">
+                <FaUsers color="white" size={24} />
+                Listar
             </Link>
             <Link to="/update">
                 <FaUserEdit color="white" size={24} />
