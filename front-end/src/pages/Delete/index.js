@@ -1,4 +1,4 @@
-import { FaUserNinja } from 'react-icons/fa';
+import { FaUserMinus } from 'react-icons/fa';
 import { useState } from 'react';
 import { toast } from 'react-toastify';
 
@@ -35,7 +35,7 @@ export default function Delete() {
 
             <div className="content">
                 <Title name="Deletar usuário">
-                    <FaUserNinja size={30} />
+                    <FaUserMinus size={30} />
                 </Title>
 
                 <div className="container">
