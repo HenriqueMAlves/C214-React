@@ -1,4 +1,4 @@
-import { FaUserNinja } from 'react-icons/fa';
+import { FaUserEdit } from 'react-icons/fa';
 import { useState } from 'react';
 import { toast } from 'react-toastify';
 
@@ -37,7 +37,7 @@ export default function Update() {
 
             <div className="content">
                 <Title name="Atualizar usuário">
-                    <FaUserNinja size={30} />
+                    <FaUserEdit size={30} />
                 </Title>
 
                 <div className="container">

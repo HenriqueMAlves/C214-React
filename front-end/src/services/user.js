@@ -12,6 +12,24 @@ const ClientUsers = {
             return e;
         }
     },
+
+    async listAllUsers() {
+        try {
+            const response = await client.get(`${userPath}/list`);
+            return response;
+        } catch (e) {
+            return e;
+        }
+    },
+
+    async listUser(data) {
+        try {
+            const response = await client.patch(`${userPath}/listUser/${data.email}`);
+            return response;
+        } catch (e) {
+            return e;
+        }
+    },
     
     async updateUser(data) {
         try {
